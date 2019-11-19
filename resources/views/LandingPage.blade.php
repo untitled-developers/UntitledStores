@@ -215,7 +215,7 @@
           </a>
         </div>
         <div class="card-body">
-          <h4 class="card-title">Vans Sk8-Hi MTE Shoes</h4>
+          <h4 class="card-title">Vans Sk89-Hi MTE Shoes</h4>
           <h6 class="card-subtitle mb-2 text-muted">Style: VA33TXRJ5</h6>
           <p class="card-text">
             The Vans All-Weather MTE Collection features footwear and apparel designed to withstand the elements whilst still looking cool.             </p>
