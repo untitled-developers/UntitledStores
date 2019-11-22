@@ -15,6 +15,14 @@ Route::get('/', function () {
     return view('LandingPage');
 });
 
+Route::get('/productpage', function () {
+    return view('productpage');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -23,6 +31,3 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
