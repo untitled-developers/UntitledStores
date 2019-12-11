@@ -10,18 +10,6 @@
     content: ">"
 }
 
-.breadcrumb {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: .1rem 0rem !important;
-    margin-bottom: 0rem;
-    list-style: none;
-    background-color: #ffffff;
-    border-radius: .25rem
-}
-
 .single_product {
     padding-top: 66px;
     padding-bottom: 140px;

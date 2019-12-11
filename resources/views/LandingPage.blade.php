@@ -1,141 +1,465 @@
 @extends('layouts.master')
  
 @section('content')
+<link href="{!! asset('css/swiper.min.css') !!}" media="all" rel="stylesheet" type="text/css" />
 
-<div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
-  <button class="w3-bar-item w3-button w3-large"
-  onclick="w3_close()">Close &times;</button>
-  <a href="#" class="w3-bar-item w3-button">Cat 1</a>
-  <a href="#" class="w3-bar-item w3-button">Cat 2</a>
-  <a href="#" class="w3-bar-item w3-button">cat 3</a>
+<div class="container" id="slider">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="{{ URL::to('/img/p3.jpg') }}"></div>
+      <div class="swiper-slide"><img src="{{ URL::to('/img/p2.jpg') }}"></div>
+      <div class="swiper-slide"><img src="{{ URL::to('/img/p1.png') }}"></div>
+      <div class="swiper-slide"><img src="{{ URL::to('/img/p4.png') }}"></div>
+    </div>
+  </div>
 </div>
 
-<div>
-  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
-  <label class="lbl-cat">Categories</label>
+
+
+<div class="container" id="slider">
+      <div class="row">
+    <h1>Top Selling</h1>
+  </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><div class="container" id="top-selling">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/p1.png') }}">
+      </div>
+      <div class="row">
+        <h3>Canon Camera</h3>
+      </div>
+      <div class="row">
+        Price: 24$ Shop Owner: Haidar
+      </div>
+      <div class="row">
+        Rating: 5 Number or orders: 23
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/p1.png') }}">
+      </div>
+      <div class="row">
+        <h3>Canon Camera</h3>
+      </div>
+      <div class="row">
+        Price: 24$ Shop Owner: Haidar
+      </div>
+      <div class="row">
+        Rating: 5 Number or orders: 23
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/p1.png') }}">
+      </div>
+      <div class="row">
+        <h3>Canon Camera</h3>
+      </div>
+      <div class="row">
+        Price: 24$ Shop Owner: Haidar
+      </div>
+      <div class="row">
+        Rating: 5 Number or orders: 23
+      </div>
+    </div>
+  </div>
+</div></div>
+      <div class="swiper-slide"><div class="container" id="top-selling">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/p1.png') }}">
+      </div>
+      <div class="row">
+        <h3>Canon Camera</h3>
+      </div>
+      <div class="row">
+        Price: 24$ Shop Owner: Haidar
+      </div>
+      <div class="row">
+        Rating: 5 Number or orders: 23
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/p1.png') }}">
+      </div>
+      <div class="row">
+        <h3>Canon Camera</h3>
+      </div>
+      <div class="row">
+        Price: 24$ Shop Owner: Haidar
+      </div>
+      <div class="row">
+        Rating: 5 Number or orders: 23
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/p1.png') }}">
+      </div>
+      <div class="row">
+        <h3>Canon Camera</h3>
+      </div>
+      <div class="row">
+        Price: 24$ Shop Owner: Haidar
+      </div>
+      <div class="row">
+        Rating: 5 Number or orders: 23
+      </div>
+    </div>
+  </div>
+</div></div>
+      <div class="swiper-slide"><div class="container" id="top-selling">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/p1.png') }}">
+      </div>
+      <div class="row">
+        <h3>Canon Camera</h3>
+      </div>
+      <div class="row">
+        Price: 24$ Shop Owner: Haidar
+      </div>
+      <div class="row">
+        Rating: 5 Number or orders: 23
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/p1.png') }}">
+      </div>
+      <div class="row">
+        <h3>Canon Camera</h3>
+      </div>
+      <div class="row">
+        Price: 24$ Shop Owner: Haidar
+      </div>
+      <div class="row">
+        Rating: 5 Number or orders: 23
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/p1.png') }}">
+      </div>
+      <div class="row">
+        <h3>Canon Camera</h3>
+      </div>
+      <div class="row">
+        Price: 24$ Shop Owner: Haidar
+      </div>
+      <div class="row">
+        Rating: 5 Number or orders: 23
+      </div>
+    </div>
+  </div>
+</div></div>
+      <div class="swiper-slide"><div class="container" id="top-selling">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/p1.png') }}">
+      </div>
+      <div class="row">
+        <h3>Canon Camera</h3>
+      </div>
+      <div class="row">
+        Price: 24$ Shop Owner: Haidar
+      </div>
+      <div class="row">
+        Rating: 5 Number or orders: 23
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/p1.png') }}">
+      </div>
+      <div class="row">
+        <h3>Canon Camera</h3>
+      </div>
+      <div class="row">
+        Price: 24$ Shop Owner: Haidar
+      </div>
+      <div class="row">
+        Rating: 5 Number or orders: 23
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/p1.png') }}">
+      </div>
+      <div class="row">
+        <h3>Canon Camera</h3>
+      </div>
+      <div class="row">
+        Price: 24$ Shop Owner: Haidar
+      </div>
+      <div class="row">
+        Rating: 5 Number or orders: 23
+      </div>
+    </div>
+  </div>
+</div></div>
+    </div>
+  </div>
 </div>
 
 
-<section class="products">
-    <div class="product-card">
-      <div class="product-image">
-        <a href="Productpage">
-        <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg">
-      </a>
+
+
+<div class="container" id="slider" style="margin-top: 50px;">
+    <div class="row">
+    <h1>Top Stores</h1>
+  </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><div class="container" id="top-stores">
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/store.jpg') }}">
       </div>
-      <div class="product-info">
-        <h5>Acer laptop</h5>
-        <h6>$99.99</h6>
+      <div class="row">
+        <h3>lord Store</h3>
       </div>
-    </div>
-    
-    <div class="product-card">
-      <div class="product-image">
-        <a href="Productpage">
-        <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg">
-      </a>
+      <div class="row">
+        Followers: 1321  Provide Services: yes
       </div>
-      <div class="product-info">
-        <h5>Acer laptop</h5>
-        <h6>$99.99</h6>
+      <div class="row">
+        Number of Products: 123 Rating: 5
       </div>
-    </div>
-    
-    <div class="product-card">
-      <div class="product-image">
-        <a href="Productpage">
-        <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg">
-      </a>
-      </div>
-      <div class="product-info">
-        <h5>Acer laptop</h5>
-        <h6>$99.99</h6>
+      <div class="row">
+        Number of Services:123 
       </div>
     </div>
-    
-    <div class="product-card">
-      <div class="product-image">
-        <a href="Productpage">
-        <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg">
-      </a>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/store.jpg') }}">
       </div>
-      <div class="product-info">
-        <h5>Acer laptop</h5>
-        <h6>$99.99</h6>
+      <div class="row">
+        <h3>lord Store</h3>
       </div>
-    </div>
-    
-    <div class="product-card">
-      <div class="product-image">
-        <a href="Productpage">
-        <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg">
-      </a>
+      <div class="row">
+        Followers: 1321  Provide Services: yes
       </div>
-      <div class="product-info">
-        <h5>Acer laptop</h5>
-        <h6>$99.99</h6>
+      <div class="row">
+        Number of Products: 123 Rating: 5
+      </div>
+      <div class="row">
+        Number of Services:123 
       </div>
     </div>
-    
-    <div class="product-card">
-      <div class="product-image">
-        <a href="Productpage">
-        <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg">
-      </a>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/store.jpg') }}">
       </div>
-      <div class="product-info">
-        <h5>Acer laptop</h5>
-        <h6>$99.99</h6>
+      <div class="row">
+        <h3>lord Store</h3>
       </div>
-    </div>
-    
-    <div class="product-card">
-      <div class="product-image">
-        <a href="Productpage">
-        <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg">
-      </a>
+      <div class="row">
+        Followers: 1321  Provide Services: yes
       </div>
-      <div class="product-info">
-        <h5>Acer laptop</h5>
-        <h6>$99.99</h6>
+      <div class="row">
+        Number of Products: 123 Rating: 5
+      </div>
+      <div class="row">
+        Number of Services:123 
       </div>
     </div>
-    
-    <div class="product-card">
-      <div class="product-image">
-        <a href="Productpage">
-        <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg">
-      </a>
+  </div>
+</div></div>
+      <div class="swiper-slide"><div class="container" id="top-stores">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/store.jpg') }}">
       </div>
-      <div class="product-info">
-        <h5>Acer laptop</h5>
-        <h6>$99.99</h6>
+      <div class="row">
+        <h3>lord Store</h3>
       </div>
-    </div>
-    
-    <div class="product-card">
-      <<div class="product-image">
-        <a href="Productpage">
-        <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg">
-      </a>
+      <div class="row">
+        Followers: 1321  Provide Services: yes
       </div>
-      <div class="product-info">
-        <h5>Acer laptop</h5>
-        <h6>$99.99</h6>
+      <div class="row">
+        Number of Products: 123 Rating: 5
+      </div>
+      <div class="row">
+        Number of Services:123 
       </div>
     </div>
-    
-    <div class="product-card">
-      <div class="product-image">
-        <a href="Productpage">
-        <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg">
-      </a>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/store.jpg') }}">
       </div>
-      <div class="product-info">
-        <h5>Acer laptop</h5>
-        <h6>$99.99</h6>
+      <div class="row">
+        <h3>lord Store</h3>
+      </div>
+      <div class="row">
+        Followers: 1321  Provide Services: yes
+      </div>
+      <div class="row">
+        Number of Products: 123 Rating: 5
+      </div>
+      <div class="row">
+        Number of Services:123 
       </div>
     </div>
-    
-  </section>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/store.jpg') }}">
+      </div>
+      <div class="row">
+        <h3>lord Store</h3>
+      </div>
+      <div class="row">
+        Followers: 1321  Provide Services: yes
+      </div>
+      <div class="row">
+        Number of Products: 123 Rating: 5
+      </div>
+      <div class="row">
+        Number of Services:123 
+      </div>
+    </div>
+  </div>
+</div></div>
+      <div class="swiper-slide"><div class="container" id="top-stores">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/store.jpg') }}">
+      </div>
+      <div class="row">
+        <h3>lord Store</h3>
+      </div>
+      <div class="row">
+        Followers: 1321  Provide Services: yes
+      </div>
+      <div class="row">
+        Number of Products: 123 Rating: 5
+      </div>
+      <div class="row">
+        Number of Services:123 
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/store.jpg') }}">
+      </div>
+      <div class="row">
+        <h3>lord Store</h3>
+      </div>
+      <div class="row">
+        Followers: 1321  Provide Services: yes
+      </div>
+      <div class="row">
+        Number of Products: 123 Rating: 5
+      </div>
+      <div class="row">
+        Number of Services:123 
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/store.jpg') }}">
+      </div>
+      <div class="row">
+        <h3>lord Store</h3>
+      </div>
+      <div class="row">
+        Followers: 1321  Provide Services: yes
+      </div>
+      <div class="row">
+        Number of Products: 123 Rating: 5
+      </div>
+      <div class="row">
+        Number of Services:123 
+      </div>
+    </div>
+  </div>
+</div></div>
+      <div class="swiper-slide"><div class="container" id="top-stores">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/store.jpg') }}">
+      </div>
+      <div class="row">
+        <h3>lord Store</h3>
+      </div>
+      <div class="row">
+        Followers: 1321  Provide Services: yes
+      </div>
+      <div class="row">
+        Number of Products: 123 Rating: 5
+      </div>
+      <div class="row">
+        Number of Services:123 
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/store.jpg') }}">
+      </div>
+      <div class="row">
+        <h3>lord Store</h3>
+      </div>
+      <div class="row">
+        Followers: 1321  Provide Services: yes
+      </div>
+      <div class="row">
+        Number of Products: 123 Rating: 5
+      </div>
+      <div class="row">
+        Number of Services:123 
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <img src="{{ URL::to('/img/store.jpg') }}">
+      </div>
+      <div class="row">
+        <h3>lord Store</h3>
+      </div>
+      <div class="row">
+        Followers: 1321  Provide Services: yes
+      </div>
+      <div class="row">
+        Number of Products: 123 Rating: 5
+      </div>
+      <div class="row">
+        Number of Services:123 
+      </div>
+    </div>
+  </div>
+</div></div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="{!! asset('js/swiper.min.js') !!}"></script>
+ <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 @endsection

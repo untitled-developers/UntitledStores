@@ -14,166 +14,49 @@
     <title>Layout</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 <style>
-    @yield('style')
-.lbl-cat{
-    font-size: 20px;
-    padding-right: 5px;
-}
-
-body{
-    line-height:1;
-}
-ol,ul{
-    list-style:none;
-}
-blockquote,q{
-    quotes:none;
-}
-blockquote:before,blockquote:after,
-q:before,q:after{
-    content:’’;
-    content:none;
-}
-/* remember to define visible focus styles! 
-:focus{
-    outline:?????;
-} */
-
-/* remember to highlight inserts somehow! */
-ins{
-    text-decoration:none;
-}
-del{
-    text-decoration:line-through;
-}
-
-table{
-    border-collapse:collapse;
-    border-spacing:0;
-}
-
-/*------------------------------------*\
-    $MAIN
-\*------------------------------------*/
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
-
-
-
-/* Typography */
-
-h1 {
-    font-size: 28px;
-    font-weight: 300;
-    flex: 1;
-}
-
-h5 {
-    font-weight: 500;
-    line-height: 1.7em;
-}
-
-h6 {
-    color: #666;
-    font-size: 14px;
-}
-
-/* Product Layout */
-
-.product-filter {
-    display: flex;
-    padding: 30px 0;
-}
-
-.sort {
-    display: flex;
-    align-self: flex-end;
-}
-
-.collection-sort {
- display: flex;
-    flex-direction: column;
-}
-
-.collection-sort:first-child {
-    padding-right: 20px;
-}
-
-label {
-    color: #666;
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 2em;
-    text-transform: uppercase;
-}
-
-.products {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.product-card {
-    display: flex;
-    flex-direction: column;
-    
-    padding: 2%;
-    flex: 1 16%;
-    
-    background-color: #FFF;
-    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
-}
-
-.product-image img {
-    width: 100%;
-}
-
-.product-info {
-    margin-top: auto;
-    padding-top: 20px;
-    text-align: center;
-}
-
-@media ( max-width: 920px ) {
-    
-    .product-card {
-        flex: 1 21%;
+    html, body {
+      position: relative;
+      height: 100%;
     }
-    
-    .products .product-card:first-child, 
-    .products .product-card:nth-child(2) {
-        flex: 2 46%;
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
     }
-    
-}
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
 
-@media ( max-width: 600px ) {
-    
-    .product-card {
-        flex: 1 46%;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
     }
-    
-}
-
-@media ( max-width: 480px ) {
-    
-    h1 {
-        margin-bottom: 20px;
-    }
-    
-    .product-filter {
-        flex-direction: column;
-    }
-    
-    .sort {
-        align-self: flex-start;
-    }
-    
-}
-
-</style>
+  </style>
 </head>
  
 <body>
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Aloha</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -202,6 +85,23 @@ label {
  
   </div>
 </nav>
+
+<div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Clothing ></a>
+  <a href="#" class="w3-bar-item w3-button">Tech ></a>
+  <a href="#" class="w3-bar-item w3-button">jewwlry ></a>
+  <a href="#" class="w3-bar-item w3-button">toys ></a>
+  <a href="#" class="w3-bar-item w3-button">LED ></a>
+  <a href="#" class="w3-bar-item w3-button">Outdoor ></a>
+  <a href="#" class="w3-bar-item w3-button">Instruments ></a>
+  <a href="#" class="w3-bar-item w3-button">Food ></a>
+</div>
+<div>
+  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+  <label class="lbl-cat">Categories</label>
+</div>
     @yield('content')
 
  

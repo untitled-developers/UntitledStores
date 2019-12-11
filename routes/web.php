@@ -19,6 +19,15 @@ Route::get('/productpage', function () {
     return view('productpage');
 });
 
+Route::get('/productcreation', function () {
+    return view('productcreation');
+});
+
+Route::get('/categorycreation', function () {
+    return view('categorycreation');
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
